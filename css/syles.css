@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+:root {
+  --primary-color: #fcbf29;
+  --primay-font: Montserrat, sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow: hidden;
+}
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: black;
+}
+nav {
+  background-color: black;
+  border: none;
+}
+.socials {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.socials a i {
+  font-size: 2rem;
+  padding: 0 1rem;
+  color: var(--primary-color);
+}
+.container {
+  background-color: black;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.quote__box {
+  max-width: 40vh;
+  max-height: 30vh;
+  min-width: 300px;
+  min-height: 200px;
+  margin: 8rem auto 0 auto;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  position: relative;
+}
+.quote__text {
+  text-align: center;
+  padding: 0 1rem;
+  padding-top: 3rem;
+  line-height: 1.5rem;
+}
+.logo {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  font-style: bolder;
+  padding: 0.5rem;
+}
+.generate {
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+  background-color: black;
+  border: 1px solid var(--primary-color);
+  margin: 5rem auto;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+}
+.generate:hover {
+  color: black;
+  background-color: var(--primary-color);
+}
+.generate:focus {
+  color: var(--primary-color);
+  background-color: black;
+  border: 1px solid var(--primary-color);
+}
